@@ -14,10 +14,10 @@
     <input type="submit" value="投稿する" id="submit"/>
   </form>
 
+<!-- JSでHTMLを記述してid="list"の直後に挿入している -->
 <div id="list">
 </div>
 
-  <a th:href="@{/postForm}">新規投稿</a>
   <div th:each="post : ${postList}">
     <div class="post">
       <div class="post-date">
